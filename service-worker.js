@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nss-BloodCell/precache-manifest.1645bc8f88e9b379b81d9d4237d4a4f8.js"
+  "/nss-BloodCell/precache-manifest.9bc995d81aae8e366262158a67a108cb.js"
 );
 
 self.addEventListener('message', (event) => {
