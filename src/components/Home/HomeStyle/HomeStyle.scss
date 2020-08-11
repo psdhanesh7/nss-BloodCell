@@ -1,0 +1,127 @@
+$pixel-width: 411px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin pixel {
+    @media (min-width: #{$pixel-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .home-page-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin: 10% 0;
+
+        @include tablet {
+            width: 60%;
+            margin: 10% auto;
+        }
+        @include desktop {
+            width: 60%;
+            margin: 3% auto 5% auto;
+        }
+
+        img {
+            width: 8.5rem;
+
+            @include pixel {
+                width: 9rem;
+            }
+            @include tablet {
+                width: 9.5rem;
+            }
+            @include desktop {
+                width: 16rem;
+            }
+        }
+
+        h1 {
+            font-family: 'Redressed', cursive;
+            color: #696666;
+            font-style: normal;
+            font-weight: normal;
+
+            @include pixel {
+                font-size: 2.5rem;
+            }
+            @include tablet {
+                font-size: 2.8rem;
+            }
+            @include desktop {
+                font-size: 3rem;
+            }
+        }
+        .quote {
+            font-family: 'Poppins', sans-serif;
+            width: 80%;
+            @include pixel {
+                font-size: 1.1rem;
+            }
+            @include tablet {
+                font-size: 1.2rem;
+            }
+            @include desktop {
+                font-size: 1.4rem;
+            }
+        }
+
+        .button-login {
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                background: #6f88e2;
+                border-radius: 9px;
+                padding: 10px 25px;
+                color: #fff;
+
+                @include pixel {
+                    font-size: 1.1rem;
+                }
+                @include tablet {
+                    font-size: 1.2rem;
+                }
+
+                @include desktop {
+                    font-size: 1.4rem;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+    }
+}

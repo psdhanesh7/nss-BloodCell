@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 411px) and (max-width: 767px) {
+  .logo-section {
+    padding: 4px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logo-section {
+    padding: 4px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-section {
+    padding: 4px;
+  }
+}
+
+.logo-section img {
+  width: calc(3rem + 2vw);
+  padding: 8px;
+}
+
+.logo-section h1,
+.logo-section h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.logo-section h1 {
+  font-weight: 500;
+  font-size: calc(0.9rem + 0.4vw);
+  color: #322864;
+}
+
+.logo-section h3 {
+  font-weight: normal;
+  font-size: calc(0.6rem + 0.3vw);
+  color: #898989;
+}
+/*# sourceMappingURL=LogoSectionStyle.css.map */
