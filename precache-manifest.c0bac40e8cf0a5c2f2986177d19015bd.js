@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aefc3a94702b8ae515342d3531593fb9",
+    "revision": "c03e264602db5181463ca6c251406806",
     "url": "/nss-BloodCell/index.html"
   },
   {
-    "revision": "37f61c43297696a0ae6f",
-    "url": "/nss-BloodCell/static/css/main.3d7bd3eb.chunk.css"
+    "revision": "94901c69f457f4105ad8",
+    "url": "/nss-BloodCell/static/css/main.b91a8cbd.chunk.css"
   },
   {
-    "revision": "63451e10a9b6a4c3c890",
-    "url": "/nss-BloodCell/static/js/2.b5face82.chunk.js"
+    "revision": "fe38acea678f68592010",
+    "url": "/nss-BloodCell/static/js/2.c3ee7505.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/nss-BloodCell/static/js/2.b5face82.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/nss-BloodCell/static/js/2.c3ee7505.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "37f61c43297696a0ae6f",
-    "url": "/nss-BloodCell/static/js/main.039c8476.chunk.js"
+    "revision": "94901c69f457f4105ad8",
+    "url": "/nss-BloodCell/static/js/main.d94a3b3f.chunk.js"
   },
   {
     "revision": "bdfca6b5f185ef5feb59",
@@ -28,12 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nss-BloodCell/static/media/blood_hand_pulse.9edad4b2.svg"
   },
   {
+    "revision": "9db077bb6ad9cae82f88d6a68c7b293a",
+    "url": "/nss-BloodCell/static/media/cross.9db077bb.svg"
+  },
+  {
     "revision": "d39894b757e7bc4b3b130c9906b6b560",
     "url": "/nss-BloodCell/static/media/doctor.d39894b7.svg"
   },
   {
     "revision": "dccc2036affb6da2d2a0223d0368806c",
     "url": "/nss-BloodCell/static/media/doctor_nurse.dccc2036.svg"
+  },
+  {
+    "revision": "a5f6b39e27be3cf8f0bd6e17e87a10c8",
+    "url": "/nss-BloodCell/static/media/hamburger.a5f6b39e.svg"
   },
   {
     "revision": "d3f10a0371757d22ffa6df5d6ef48d35",

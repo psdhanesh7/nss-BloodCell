@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/nss-BloodCell/static/css/main.3d7bd3eb.chunk.css",
-    "main.js": "/nss-BloodCell/static/js/main.039c8476.chunk.js",
-    "main.js.map": "/nss-BloodCell/static/js/main.039c8476.chunk.js.map",
+    "main.css": "/nss-BloodCell/static/css/main.b91a8cbd.chunk.css",
+    "main.js": "/nss-BloodCell/static/js/main.d94a3b3f.chunk.js",
+    "main.js.map": "/nss-BloodCell/static/js/main.d94a3b3f.chunk.js.map",
     "runtime-main.js": "/nss-BloodCell/static/js/runtime-main.83668464.js",
     "runtime-main.js.map": "/nss-BloodCell/static/js/runtime-main.83668464.js.map",
-    "static/js/2.b5face82.chunk.js": "/nss-BloodCell/static/js/2.b5face82.chunk.js",
-    "static/js/2.b5face82.chunk.js.map": "/nss-BloodCell/static/js/2.b5face82.chunk.js.map",
+    "static/js/2.c3ee7505.chunk.js": "/nss-BloodCell/static/js/2.c3ee7505.chunk.js",
+    "static/js/2.c3ee7505.chunk.js.map": "/nss-BloodCell/static/js/2.c3ee7505.chunk.js.map",
     "index.html": "/nss-BloodCell/index.html",
-    "precache-manifest.5853b7681a83a48defa92abca6688021.js": "/nss-BloodCell/precache-manifest.5853b7681a83a48defa92abca6688021.js",
+    "precache-manifest.c0bac40e8cf0a5c2f2986177d19015bd.js": "/nss-BloodCell/precache-manifest.c0bac40e8cf0a5c2f2986177d19015bd.js",
     "service-worker.js": "/nss-BloodCell/service-worker.js",
-    "static/css/main.3d7bd3eb.chunk.css.map": "/nss-BloodCell/static/css/main.3d7bd3eb.chunk.css.map",
-    "static/js/2.b5face82.chunk.js.LICENSE.txt": "/nss-BloodCell/static/js/2.b5face82.chunk.js.LICENSE.txt",
+    "static/css/main.b91a8cbd.chunk.css.map": "/nss-BloodCell/static/css/main.b91a8cbd.chunk.css.map",
+    "static/js/2.c3ee7505.chunk.js.LICENSE.txt": "/nss-BloodCell/static/js/2.c3ee7505.chunk.js.LICENSE.txt",
     "static/media/blood_hand_pulse.svg": "/nss-BloodCell/static/media/blood_hand_pulse.9edad4b2.svg",
+    "static/media/cross.svg": "/nss-BloodCell/static/media/cross.9db077bb.svg",
     "static/media/doctor.svg": "/nss-BloodCell/static/media/doctor.d39894b7.svg",
     "static/media/doctor_nurse.svg": "/nss-BloodCell/static/media/doctor_nurse.dccc2036.svg",
+    "static/media/hamburger.svg": "/nss-BloodCell/static/media/hamburger.a5f6b39e.svg",
     "static/media/hospital.svg": "/nss-BloodCell/static/media/hospital.d3f10a03.svg",
     "static/media/hospital_light.svg": "/nss-BloodCell/static/media/hospital_light.4505de16.svg",
     "static/media/logout.svg": "/nss-BloodCell/static/media/logout.7d7f2a3b.svg",
@@ -23,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.83668464.js",
-    "static/js/2.b5face82.chunk.js",
-    "static/css/main.3d7bd3eb.chunk.css",
-    "static/js/main.039c8476.chunk.js"
+    "static/js/2.c3ee7505.chunk.js",
+    "static/css/main.b91a8cbd.chunk.css",
+    "static/js/main.d94a3b3f.chunk.js"
   ]
 }
