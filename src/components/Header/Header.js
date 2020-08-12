@@ -11,7 +11,7 @@ export default function Header({ props }) {
     const onLogout = () => {
         console.log(auth.isAuthenticated());
         auth.logout(() => {
-            props.history.push('/');
+            props.history.push('/nss-BloodCell/');
         });
     };
 

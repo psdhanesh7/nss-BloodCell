@@ -14,7 +14,7 @@ export default function LoginBox({ props }) {
         console.log(auth.isAuthenticated());
         auth.login(
             () => {
-                props.history.push('/main/requirements/active');
+                props.history.push('/nss-BloodCell/main/requirements/active');
             },
             value.username,
             value.password

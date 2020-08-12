@@ -9,8 +9,8 @@ function App() {
         <Router>
             <Switch>
                 {/* <Main /> */}
-                <Route path="/" exact component={Home} />
-                <ProtectedRoute path="/main" component={Main} />
+                <Route path="/nss-BloodCell/" exact component={Home} />
+                <ProtectedRoute path="/nss-BloodCell/main" component={Main} />
                 <Route path="*" component={Home} />
             </Switch>
         </Router>

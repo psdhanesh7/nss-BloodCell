@@ -16,24 +16,40 @@ export default function Main(props) {
         <Router>
             <Header props={props} />
             <Route
-                path="/main/requirements/add"
+                path="/nss-BloodCell/main/requirements/add"
                 exact
                 component={AddRequirement}
             />
             <Route
-                path="/main/requirements/active"
+                path="/nss-BloodCell/main/requirements/active"
                 exact
                 component={ActiveRequirement}
             />
             <Route
-                path="/main/requirements/closed"
+                path="/nss-BloodCell/main/requirements/closed"
                 exact
                 component={ClosedRequirement}
             />
-            <Route path="/main/hospital/view" exact component={HospitalList} />
-            <Route path="/main/hospital/add" exact component={AddHospital} />
-            <Route path="/main/donors/view" exact component={DonorsList} />
-            <Route path="/main/donors/add" exact component={AddDonor} />
+            <Route
+                path="/nss-BloodCell/main/hospital/view"
+                exact
+                component={HospitalList}
+            />
+            <Route
+                path="/nss-BloodCell/main/hospital/add"
+                exact
+                component={AddHospital}
+            />
+            <Route
+                path="/nss-BloodCell/main/donors/view"
+                exact
+                component={DonorsList}
+            />
+            <Route
+                path="/nss-BloodCell/main/donors/add"
+                exact
+                component={AddDonor}
+            />
             <Footer />
         </Router>
     );

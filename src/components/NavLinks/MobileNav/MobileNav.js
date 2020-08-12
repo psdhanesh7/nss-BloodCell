@@ -39,7 +39,7 @@ export default function MobileNav({ changeHamburgerStatus, onLogout }) {
                     <ul>
                         <li>
                             <Link
-                                to="/main/requirements/active"
+                                to="/nss-BloodCell/main/requirements/active"
                                 className={activeLink && 'active-link'}
                                 onClick={findActiveLink}
                             >
@@ -48,7 +48,7 @@ export default function MobileNav({ changeHamburgerStatus, onLogout }) {
                         </li>
                         <li>
                             <Link
-                                to="/main/requirements/closed"
+                                to="/nss-BloodCell/main/requirements/closed"
                                 onClick={findActiveLink}
                             >
                                 Closed Req.
@@ -56,7 +56,7 @@ export default function MobileNav({ changeHamburgerStatus, onLogout }) {
                         </li>
                         <li>
                             <Link
-                                to="/main/requirements/add"
+                                to="/nss-BloodCell/main/requirements/add"
                                 onClick={findActiveLink}
                             >
                                 Add Req.
@@ -69,7 +69,7 @@ export default function MobileNav({ changeHamburgerStatus, onLogout }) {
                     <ul>
                         <li>
                             <Link
-                                to="/main/hospital/view"
+                                to="/nss-BloodCell/main/hospital/view"
                                 onClick={findActiveLink}
                             >
                                 Available Hospitals
@@ -77,7 +77,7 @@ export default function MobileNav({ changeHamburgerStatus, onLogout }) {
                         </li>
                         <li>
                             <Link
-                                to="/main/hospital/add"
+                                to="/nss-BloodCell/main/hospital/add"
                                 onClick={findActiveLink}
                             >
                                 Add Hospital
@@ -90,7 +90,7 @@ export default function MobileNav({ changeHamburgerStatus, onLogout }) {
                     <ul>
                         <li>
                             <Link
-                                to="/main/donors/view"
+                                to="/nss-BloodCell/main/donors/view"
                                 onClick={findActiveLink}
                             >
                                 Available Donors
@@ -98,7 +98,7 @@ export default function MobileNav({ changeHamburgerStatus, onLogout }) {
                         </li>
                         <li>
                             <Link
-                                to="/main/donors/add"
+                                to="/nss-BloodCell/main/donors/add"
                                 onClick={findActiveLink}
                             >
                                 Add Donor
