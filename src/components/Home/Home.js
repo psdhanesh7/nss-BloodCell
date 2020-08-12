@@ -3,8 +3,9 @@ import LogoSection from '../LogoSection/LogoSection';
 import { bloodHandPulse } from '../../Assets/img';
 import './HomeStyle/HomeStyle.css';
 import Footer from '../Footer/Footer';
+import LoginBox from '../LoginBox/LoginBox';
 
-export default function Home() {
+export default function Home(props) {
     return (
         <div className="home-page">
             <LogoSection />
@@ -12,13 +13,7 @@ export default function Home() {
             <div className="home-page-content">
                 <img src={bloodHandPulse} alt="" />
                 <h1>Blood Cell</h1>
-                <div className="quote">
-                    “ A single pint can save three lives, a single gesture can
-                    create a million smiles ”
-                </div>
-                <div className="button-login">
-                    <a href="#">Login</a>
-                </div>
+                <LoginBox props={props} />
             </div>
 
             <Footer />

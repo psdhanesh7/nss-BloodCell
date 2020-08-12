@@ -1,0 +1,106 @@
+$pixel-width: 411px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin pixel {
+    @media (min-width: #{$pixel-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navLink-component-desktop {
+    display: none;
+
+    @include desktop {
+        display: flex;
+    }
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding-right: 5%;
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        list-style: none;
+
+        li {
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            span {
+                cursor: pointer;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+            ul {
+                display: flex;
+                position: absolute;
+                top: 140%;
+                width: 0;
+                left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                li {
+                    margin: 12px 0;
+                    transition: all ease-in 100ms;
+                    &:active {
+                        transform: scale(0.9);
+                    }
+
+                    &:nth-child(1) {
+                        margin-top: 20px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        background-color: #88a083;
+                        cursor: pointer;
+
+                        font-size: 0;
+                        padding: 0;
+
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            &:hover {
+                span {
+                    background-color: #d8d8d8;
+                }
+                ul {
+                    width: 400%;
+                    li {
+                        a {
+                            padding: 10px 20px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
