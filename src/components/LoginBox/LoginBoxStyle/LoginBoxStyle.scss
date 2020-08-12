@@ -37,8 +37,16 @@ $desktop-width: 1024px;
     width: 80%;
     max-width: 450px;
     max-height: 300px;
+    min-height: 260px;
 
     padding: 20px;
+
+    @include pixel {
+        min-height: 300px;
+    }
+    @include tablet {
+        min-height: 300px;
+    }
 
     @include desktop {
         height: 300px;
@@ -87,6 +95,7 @@ $desktop-width: 1024px;
             border-radius: 9px;
             padding: 10px 25px;
             color: #fff;
+            margin-top: 15px;
             border: none;
             outline: none;
 

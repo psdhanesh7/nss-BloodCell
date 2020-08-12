@@ -6,6 +6,7 @@
 }
 
 .header-component {
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
