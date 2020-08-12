@@ -1,9 +1,10 @@
 import React from 'react';
+import HeadingInside from '../HeadingInside/HeadingInside';
 
 export default function AddDonor() {
     return (
         <div>
-            <h1>Add Donor</h1>
+            <HeadingInside headingContentInside="Add Donor" />
         </div>
     );
 }

@@ -8,9 +8,10 @@ function App() {
     return (
         <Router>
             <Switch>
-                <Route path="/" exact component={Home} />
+                <Main />
+                <Route path="/a" exact component={Home} />
                 <ProtectedRoute path="/main" component={Main} />
-                <Route path="*" component={Home} />
+                <Route path="/as" component={Home} />
             </Switch>
         </Router>
     );

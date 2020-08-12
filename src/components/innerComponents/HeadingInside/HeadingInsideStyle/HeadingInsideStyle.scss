@@ -1,0 +1,52 @@
+$pixel-width: 411px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin pixel {
+    @media (min-width: #{$pixel-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading-inside-component {
+    margin: 20px;
+    margin-top: 30px;
+    h1 {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        color: #61929b;
+
+        background: #e9e9e9;
+        border-radius: 5px;
+        padding: 8px 20px;
+
+        @include pixel {
+            font-size: 0.9rem;
+        }
+        @include tablet {
+            font-size: 1rem;
+        }
+        @include desktop {
+            font-size: 1rem;
+        }
+    }
+}

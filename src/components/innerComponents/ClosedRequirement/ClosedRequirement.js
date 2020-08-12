@@ -1,9 +1,10 @@
 import React from 'react';
+import HeadingInside from '../HeadingInside/HeadingInside';
 
 export default function ClosedRequirement() {
     return (
         <div>
-            <h1>Closed Requirement</h1>
+            <HeadingInside headingContentInside="Closed Requirements" />
         </div>
     );
 }

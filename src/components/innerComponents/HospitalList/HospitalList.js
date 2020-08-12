@@ -1,9 +1,10 @@
 import React from 'react';
+import HeadingInside from '../HeadingInside/HeadingInside';
 
 export default function HospitalList() {
     return (
         <div>
-            <h1>Hospital List</h1>
+            <HeadingInside headingContentInside="Available Hospitals" />
         </div>
     );
 }
