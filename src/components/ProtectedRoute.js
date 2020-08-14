@@ -1,13 +1,15 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import auth from './auth';
+import { connect } from 'react-redux';
 
-export const ProtectedRoute = ({ component: Component, ...rest }) => {
+function ProtectedRoute({ component: Component, ...rest }){
     return (
         <Route
             {...rest}
             render={(props) => {
-                if (auth.authenticated) {
+                // console.log(props);
+                if (props.auth) {
                     return <Component {...props} />;
                 } else {
                     return (
@@ -25,3 +27,9 @@ export const ProtectedRoute = ({ component: Component, ...rest }) => {
         />
     );
 };
+
+function mapStateToProps({ auth }) {
+    return { auth };
+}
+
+export default connect(mapStateToProps)(ProtectedRoute);

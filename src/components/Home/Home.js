@@ -4,7 +4,9 @@ import { bloodHandPulse } from '../../Assets/img';
 import './HomeStyle/HomeStyle.css';
 import Footer from '../Footer/Footer';
 import LoginBox from '../LoginBox/LoginBox';
+import ActiveRequirement from '../innerComponents/ActiveRequirement/ActiveRequirement';
 import { connect } from 'react-redux';
+import Main from '../Main';
 
 class Home extends Component {
 
@@ -25,7 +27,11 @@ class Home extends Component {
                     </div>
                 )
             default:
-                return 'Active requirements should be displayed here';
+                return (
+                    <div>
+                        <Main />
+                    </div>
+                );
         }
     }
 

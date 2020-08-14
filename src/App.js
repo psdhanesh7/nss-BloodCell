@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Main from './components/Main';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
-import { ProtectedRoute } from './components/ProtectedRoute';
+import ProtectedRoute from './components/ProtectedRoute';
 import { connect } from 'react-redux';
 import * as actions from './actions';
 

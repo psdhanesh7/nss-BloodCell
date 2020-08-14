@@ -4,15 +4,19 @@ import './HeaderStyle/HeaderStyle.css';
 import { hamburgerLines } from '../../Assets/img';
 import NavLinks from '../NavLinks/NavLinks';
 import auth from '../auth';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
-export default function Header({ props }) {
+function Header(state) {
     const [hamburgerStatus, setHamburgerStatus] = useState(false);
 
     const onLogout = () => {
-        console.log(auth.isAuthenticated());
-        auth.logout(() => {
-            props.history.push('/nss-BloodCell/');
-        });
+        // console.log(auth.isAuthenticated());
+        // auth.logout(() => {
+        //     props.history.push('/nss-BloodCell/');
+        // });
+        console.log(state);
+        state.logoutUser();
     };
 
     console.log(hamburgerStatus);
@@ -38,4 +42,6 @@ export default function Header({ props }) {
             />
         </div>
     );
-}
+};
+
+export default connect(null, actions)(Header);
